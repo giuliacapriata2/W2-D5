@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="reset.css" />
-
     <style>
       * {
         margin: 0;
@@ -17,12 +16,14 @@
         font-family: Arial, sans-serif;
         line-height: 1.6;
       }
+
       header .logo {
         max-width: 100px;
         height: auto;
         display: block;
         margin: 0 auto;
       }
+
       header.colorescuro {
         background-color: rgb(34, 47, 63);
         color: white;
@@ -62,7 +63,7 @@
 
       #rettangoloverde {
         background-color: #228b22;
-        background-image: url("Amazon Page/assets/images/bg-image.png");
+        background-image: url("./assets/images/bg-image.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -75,7 +76,7 @@
       }
 
       h1 {
-        background-image: url("Amazon Page/assets/images/bg-image.png");
+        background-image: url("./assets/images/bg-image.png");
         background-size: cover;
         background-position: center;
         color: white;
@@ -126,18 +127,22 @@
       }
 
       .image-box {
+        position: relative;
         text-align: center;
         background-color: white;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 20px 0;
+        overflow: hidden;
       }
 
       .image-box .text-overlay {
         margin-bottom: 20px;
         color: black;
         font-weight: bold;
+        position: relative;
+        z-index: 1;
       }
 
       .image-container {
@@ -166,11 +171,13 @@
       .image-box.sound-cheer {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         background-size: cover;
         background-position: center;
         color: white;
         padding: 20px;
+        height: 300px; /* Imposta un'altezza fissa per il contenitore */
+        background-repeat: no-repeat;
       }
 
       .image-box.play-gifting {
@@ -234,7 +241,7 @@
         <div class="text-overlay">
           <p>Play the gifting game</p>
         </div>
-        <a href="/assets/images/img_9.pngl" class="shop-gaming">Shop Gaming</a>
+        <a href="shop-gaming.html" class="shop-gaming">Shop Gaming</a>
       </div>
 
       <div class="image-box sound-cheer">
